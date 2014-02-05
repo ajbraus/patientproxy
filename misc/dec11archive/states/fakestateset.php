@@ -1,0 +1,5 @@
+<?php
+$fakeState = array (
+	'patientInfo'
+	);
+?>

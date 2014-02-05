@@ -1,0 +1,9 @@
+Add PDFs
+
+Add verification code/payment gateway
+
+Back button requires validations
+
+chaging a records:
+  from: 107.21.3.47
+  to: what it is now

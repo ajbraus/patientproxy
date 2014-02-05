@@ -1,0 +1,15 @@
+# Turn on RewriteEngine:
+RewriteEngine on
+
+# if no trailing stuff then direct to index.php
+RewriteRule ^([^/\.]+)/?$ /practice/index.php [NC,L]
+
+# Rewrite web pages to one index page            
+# /somepage/            			=> index.php?page=somepage       
+# /somesection/somepage 			=> index.php?section=somesection&page=somepage       
+# /somesection/somesub/somepage/ 	=> index.php?section=somesection&subsection=somesub&page=somepage       
+# Variables are accessed in PHP using $_GET['section'], $_GET['subsection'] and $_GET['page'] 
+
+RewriteRule ^([^/\.]+)/?$ /practice/index.php?page=$1 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ /practice/index.php?section=$1&page=$2 [L] 
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /practice/index.php?section=$1&subsection=$2&page=$3 [L]

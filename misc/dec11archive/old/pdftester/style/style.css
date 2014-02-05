@@ -1,0 +1,464 @@
+/* ######################################## GENERAL */
+.accessible {
+	float: left;
+	font-size: 1px;
+	margin-left: -1000%;
+	}
+h6.help {
+	float: right;
+	text-align: right;
+	}
+a:link, a:visited, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+	}
+body {
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	color: #444444;
+	}
+#headercolor {
+	background: -webkit-gradient(linear, left top, left bottom, from(#E2DDEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #E2DDEE, #FFF, #FFF, #FFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E2DDEE', endColorstr='#FFFFFF');
+	background: -o-linear-gradient(top, #E2DDEE, #FFF, #FFF);
+	min-height: 300px;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	}
+#wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	}
+#header {
+	width: 100%;
+	max-height: 100px;
+	}
+#mainbody {
+	clear: both;
+	width: 80%;
+	margin-top: 0;
+	padding-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#sidebar {
+	float: right;
+	width: 19%;
+	margin-top: 20px;
+	}
+/* ======================================= END GENERAL */
+
+
+
+/* ######################################## LOGO & TOPLINKS */
+#header #logo {
+	float: left;
+	width: 49%;
+	height: 70%;
+	}
+#header #littlelinks {
+	float: right;
+	width: 49%;
+	font-size: .8em;
+	font-weight: 500;
+	color: #777777;
+	}
+#header #littlelinks ul {
+	text-align: right;
+	}
+#header #littlelinks ul li {
+	display: inline;
+	margin-left: 3px;
+	margin-right: 3px;
+	}
+/* ===================================== END LOGO & TOPLINKS */
+
+
+	
+/* ######################################## SIDEBAR */
+#sidebar #helpbox {}
+#sidebar #helpbox p.helptext {}
+#sidebar #summarybox {}
+/* ======================================= END SIDEBAR */
+
+
+
+/* ######################################## BUTTONS */
+ul.buttons {
+	margin-top: 20px;
+	}
+.nextbutton, .backbutton {
+	width: 180px;
+	height: 50px;
+	border: none;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: 500;
+	color: #444444;
+	cursor: pointer;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	}
+.nextbutton {
+	background: url(../images/continue_states2.png) no-repeat;
+	float: right;
+	}
+.backbutton {
+	background: url(../images/back_states.png);
+	float: left;
+	}
+.nextbutton:hover {
+	background-position: 0px -50px;
+	color: #333333;
+	}
+.nextbutton:active {
+	background-position: 0px -100px;
+	color: #222222;
+	}
+.backbutton:hover {
+	background-position: 0px -50px;
+	color: #333333;
+	}
+.backbutton:active {
+	background-position: 0px -100px;
+	color: #222222;
+	}
+/* ======================================= END BUTTONS */
+	
+	
+	
+/* ######################################## QUESTION PAGES */
+div.questionblock {
+	float: left;
+	width: 79%;
+	margin-top: 20px;
+	}
+p.questiontext {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	width: 100%;
+	}
+span.help {
+	font-weight: 800;
+	font-size: 1.2em;
+	color: #FAC971;
+	text-shadow: 0px 1px 2px #777777;
+	float: right;
+	margin-right: 5px;
+	}
+span.help:hover {
+	text-shadow: 0px 1px 2px #111111;
+	/*color: #FBB03B;*/
+	cursor: pointer;
+	}
+span.helptext {
+	display: block;
+	font-size: .7em;
+	color: #888888;
+	padding: 5px 10px;
+	margin-top: 5px;
+	font-weight: 200;
+	background: #F7F6F0;
+	border: 1px solid #CCCCCC;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	}
+/* ======================================= END QUESTION PAGES */
+	
+	
+		
+/* ######################################## FORM ELEMENTS */
+fieldset {
+	margin-bottom: 30px;
+	font-size: 1em;
+	/*border-bottom: 1px solid #dddddd;*/
+	}
+fieldset fieldset {
+	margin-left: 8%;
+	margin-top: 2px;
+	margin-bottom: 6px;
+	font-size: 1em;
+	border: none;
+	}
+legend {
+	font-size: .8em;
+	display: none;
+	}
+ul {
+	margin-left: 5%;
+	margin-bottom: 10px;
+	}
+li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+li li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+span.form_label {
+	display: inline;
+	width: 25%;
+	padding-top: 2px;
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: 500;
+	font-size: .9em;
+	color: #460069;
+	color: #662D91;
+	float: left;
+	}
+fieldset fieldset.form_set {
+	margin-left: 2%;
+	}
+fieldset fieldset span.form_label {
+	font-size: .8em;
+	}
+fieldset fieldset textarea {
+	width: 60%;
+	}
+span.checkbox_label, span.radio_label {
+	margin-left: 10px;
+	}
+input[type=text] {
+	display: inline;
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	padding: 9px 7px 10px 7px;
+	width: 60%;
+	font-size: 1em;
+	height: 20px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	opacity: 1;
+	border: 1px solid rgba(100, 100, 100, 0.5);
+	-moz-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	-webkit-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	}
+textarea {
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	padding: 3px 7px 10px 7px;
+	width: 400px;
+	font-size: 1em;
+	height: 50px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	opacity: 1;
+	border: 1px solid rgba(100, 100, 100, 0.5);
+	-moz-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	-webkit-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	}
+input.w2 {
+	width: 40px;
+	}
+input.w5 {
+	width: 100px;
+	}
+input.whalf {
+	width: 180px;
+	}
+.checkbox, .radio {
+	width: 25px;
+	height: 25px;
+	padding: 2px 2px 0 0;
+	background: url(../images/checkboxes.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+.radio {
+	background: url(../images/radios.png) no-repeat;
+	width: 27px;
+	height: 27px;
+	padding: 2px 2px 0 0;
+}
+/* ======================================= END FORM ELEMENTS */
+
+
+
+/* ######################################## SPLASH PAGE */
+div.topsection div.imageandcaption {
+	width: 50%;
+	float: right;
+	font-size: .7em;
+	line-height: normal;
+	padding-left: 15px;
+	padding-top: 10px;
+	}
+div.topsection div.imageandcaption p {
+	margin-top: 10px;
+	padding: 5px;
+	text-align: left;
+	}
+div.topsection div.text {
+	text-align: center;
+	width: 45%;
+	padding-top: 100px;
+	}
+div.topsection h4 {
+	font-size: 1.1em;
+	line-height: normal;
+	font-weight: 200;
+	font-style: italic;
+	color: #888888;
+	line-height: 1.3em;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	}
+div.topsection p.launch {
+	color: #666666;
+	font-size: .9em;
+	font-weight: 500;
+	line-height: normal;
+	text-align: center;
+	}
+div.topsection p.date {
+	color: #F5B548;
+	font-size: 1.1em;
+	font-weight: 600;
+	margin-bottom: 40px;
+	line-height: normal;
+	text-align: center;
+	}
+div.topsection div.text div.centericons {
+	width: 302px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	}
+div.threecolumn {
+	width: 100%;
+	clear: both;
+	padding-top: 60px;
+	}
+div.threecolumn div.line {
+	background-color: #888888;
+	width: 1px;
+	height: 300px;
+	display: inline;
+	float: left;
+	}
+div.threecolumn div.column {
+	padding-top: 5px;
+	display: inline;
+	float: left;
+	text-align: center;
+	font-size: .8em;
+	font-weight: 300;
+	line-height: normal;
+	}
+div.threecolumn div p {
+	text-align: left;
+	margin-top: 5px;
+	padding: 5px 30px 5px 30px;
+	}
+div.threecolumn div.column.first {
+	width: 29%;
+	margin-right: 3%;
+	}
+div.threecolumn div.column.middle {
+	width: 29%;
+	margin-left: 3%;
+	margin-right: 3%;
+	}
+div.threecolumn div.column.last {
+	width: 29%;
+	margin-left: 3%;
+	}
+div.threecolumn img {
+	width: 200px;
+	height: 200px;
+	}
+/* ======================================= END SPLASH PAGE */
+
+
+
+/* ######################################## HOW PAGE */
+div.pagecontent h4 {
+	color: #444444;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin: 20px 0 20px 0;
+	line-height: normal;
+	text-align: left;
+	}
+div.pagecontent div.actionsteps {
+	margin-bottom: 20px;
+	}
+div.pagecontent div.actionsteps div {
+	width: 100%;
+	border-bottom: 1px solid #444444;
+	height: 240px;
+	margin-top: 40px;
+	}
+div.pagecontent div.actionsteps div.last p {
+	margin-bottom: 10px;
+	}
+div.pagecontent div.actionsteps div.last p span.sidenote {
+	font-size: .6em;
+	}
+div.pagecontent div.actionsteps div img {
+	float: left;
+	margin-right: 20px;
+	}
+div.pagecontent div.actionsteps div ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	}
+div.pagecontent div.actionsteps div ul li {
+	margin-left: 240px;
+	}
+div.pagecontent div.centericons {
+	width: 302px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	}
+/* ======================================= END HOW PAGE */
+		
+	
+	
+/* ######################################## FOOTER */
+#footer #bottomlinks {
+	font-size: .6em;
+	font-weight: 400;
+	color: #777777;
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+	}
+#footer #bottomlinks ul {
+	margin-left: 0;
+	}
+#footer #bottomlinks ul li {
+	display: inline;
+	margin-left: 3px;
+	margin-right: 3px;
+	}
+/* ======================================= END FOOTER */
+
+
+	
+/* ################################## SPECIFIC EXCEPTIONS */
+div#usmap p.questiontext {
+	margin-bottom: 0;
+	}
+/* ================================= END SPECIFIC EXCEPTIONS */
+
+
